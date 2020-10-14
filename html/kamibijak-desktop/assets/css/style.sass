@@ -1,0 +1,1023 @@
+/*-- Color --*/
+$tosca: #14A3B2
+$bg-dark-grey: #292929
+$bg-grey: #F7F7F7
+$bg-red: #ED3A25
+$t-grey: #504848
+$t-light-grey: #A5A5A5
+$bot-shadow : 0 1px 6px 0 rgba(32,33,36,0.28)
+$black : rgb(0,0,0)
+$transparent : rgba(0,0,0,0)
+$white : rgb(255,255,255)
+$primary : rgb(213,132,38)
+$secondary : rgb(255,106,39)
+$third : rgb(101,87,88)
+$cardBody : rgb(248,248,248)
+
+.dark-grey
+  background-color: $bg-dark-grey !important
+
+.tosca
+  background-color: $tosca !important
+
+.white
+  background-color: $white !important
+
+.grey
+  background-color: $bg-grey !important
+
+.red
+  background-color: $bg-red !important
+
+.transparent
+  background-color: $transparent !important
+
+/*-- Text Color --*/
+.text-grey
+  color: $t-grey !important
+  
+.text-light-grey
+  color: $t-light-grey !important
+
+.text-tosca
+  color: $tosca !important
+  
+/*--- Mixins ---*/
+
+/*--- Animation ---*/
+=animation($name, $property)
+  -webkit-animation: $name $property
+  -moz-animation: $name $property
+  -ms-animation: $name $property
+  -o-animation: $name $property
+  animation: $name $property
+
+/*--- /Animation ---*/
+
+/*--- Keyframes ---*/
+=keyframes($name)
+  @-webkit-keyframes #$name
+    @content
+  @-moz-keyframes #$name
+    @content
+  @-ms-keyframes #$name
+    @content
+  @-o-keyframes #$name
+    @content
+  @keyframes #$name
+    @content
+/*--- /Keyframes ---*/
+
+/*--- Transform ---*/
+=transform($property)
+  -webkit-transform: $property
+  -ms-transform: $property
+  transform: $property
+
+/*--- /Transform ---*/
+
+/*--- Box Shadows ---*/
+=box-shadow($top, $left, $blur, $clear, $color, $inset: false)
+  @if $inset
+    -webkit-box-shadow: inset $top $left $blur $clear $color
+    -moz-box-shadow: inset $top $left $blur $clear $color
+    box-shadow: inset $top $left $blur $clear $color
+  @else
+    -webkit-box-shadow: $top $left $blur $clear $color
+    -moz-box-shadow: $top $left $blur $clear $color
+    box-shadow: $top $left $blur $clear $color
+
+/*--- /Box Shadows ---*/
+
+/*--- /Mixin ---*/
+
+/*--- Bg Color ---*/
+.black
+  background-color: $black !important
+
+.transparent
+  background-color: $transparent !important
+
+.white
+  background-color: $white !important
+
+.f7
+  background-color: #f7f7f7 !important
+
+/*--- /Bg Color ---*/
+
+/*--- Text Color ---*/
+.text-black
+  color: $black !important
+
+.text-white
+  color: $white !important
+
+/*--- /Text Color ---*/
+
+/*--- Text Weight ---*/
+.fw-100
+  font-weight: 100 !important
+
+.fw-200
+  font-weight: 200 !important
+
+.fw-300
+  font-weight: 300 !important
+
+.fw-400
+  font-weight: 400 !important
+
+.fw-500
+  font-weight: 500 !important
+
+.fw-600
+  font-weight: 600 !important
+
+.fw-700
+  font-weight: 700 !important
+
+.fw-800
+  font-weight: 800 !important
+
+.fw-900
+  font-weight: 900 !important 
+/*--- /Text Weight ---*/
+
+/*--- Button ---*/
+.btn-line-rounded
+  border-radius: 50px
+  padding: 0.356rem 0.975rem
+  transition: .3s all
+  cursor: pointer
+
+  &:hover
+    color: $white !important
+    border: 2px solid $transparent
+    text-decoration: none
+    transition: .3s all
+
+.btn-white
+  color: $white !important
+  border: 2px solid $white
+
+  &:hover
+    background-color: $white !important
+    color: $black !important
+    text-decoration: none
+
+/*--- /Button ---*/
+
+/*--- Image ---*/
+.of-cover
+  object-fit: cover !important
+
+.img-circle
+  border-radius: 50%
+
+.img-zoom
+  +transform(scale(1.5))
+
+.img-rounded-5
+  border-radius: 5px
+
+.img-rounded-10
+  border-radius: 10px
+
+/*--- /Image ---*/
+
+/*--- Scroll Horizontal ---*/
+.scroll 
+ white-space: nowrap
+ overflow-x: auto
+ -webkit-overflow-scrolling: touch
+ -ms-overflow-style: -ms-autohiding-scrollbar
+
+.item-scroll,
+.vertical-align-middle 
+  display: inline-block
+  vertical-align: middle
+
+
+.scroll::-webkit-scrolbar 
+  display: none
+
+/*--- /Scroll Horizontal ---*/
+
+/*-- Button --*/
+.btn-nav
+  border: none
+  background: none
+/*-- /Button --*/
+
+/*-- Add Style --*/
+main
+  font-family: 'Roboto', sans-serif
+  min-height: 100vh
+  transition: .3s all
+  -webkit-transition: .3s all
+
+.bb-1
+  border-bottom: 1px solid rgba(0,0,0,.1)
+
+.fs-14
+  font-size: 14pt
+
+/*-- Navbar --*/
+.navbar-kb
+  box-shadow: 0 3px 8px rgba(0,0,0,.1)
+  height: 80px
+  align-items: center
+  z-index: 3
+
+  ul
+    li
+      a
+        font-family: 'Roboto', sans-serif
+        font-size: 1rem
+        font-weight: 600
+        padding: .65rem .85rem
+        text-decoration: none
+
+        &.btn-upload
+          -webkit-border-radius: 50px
+          -moz-border-radius: 50px
+          border-radius: 50px
+          padding: .45rem 1.25rem
+          font-weight: 300
+          font-size: .75rem
+
+          &:hover
+            color: $white !important
+
+        &:hover
+          color: $tosca !important
+
+.nav-top
+  height: 30px
+  align-items: center
+
+  .nav-top-text
+    font-size: .9rem
+    font-family: 'Roboto', sans-serif
+    font-weight: 300
+
+.src
+  width: 23px
+
+// new
+#headerHome
+  width: 100%
+  height: 70px
+  background: $white
+  display: flex
+  align-items: center
+  background: $transparent
+  position: fixed
+  z-index: 2
+  -webkit-transition: .5s all
+  transition: .5s all
+  box-shadow: $bot-shadow
+
+  &.fixed-nav
+    background: $white
+    box-shadow: $bot-shadow
+    -webkit-transition: .5s all
+    transition: .5s all
+
+    .nav-header
+      .nav-menu
+        li
+          a
+            color: rgba(0,0,0,.7)
+            font-weight: 700
+            -webkit-transition: .3s all
+            transition: .3s all
+
+            &:hover
+              background: $primary
+              color: $white
+              -webkit-transition: .3s all
+              transition: .3s all
+
+#header
+  width: 100%
+  height: 70px
+  background: $white
+  display: flex
+  align-items: center
+  box-shadow: $bot-shadow
+  position: fixed
+  z-index: 2
+  -webkit-transition: .5s all
+  transition: .5s all
+
+  .nav-header
+    .nav-menu
+      li
+        a
+          color: rgba(0,0,0,.7)
+          font-weight: 700
+          -webkit-transition: .3s all
+          transition: .3s all
+
+          &:hover
+            background: $primary
+            color: $white
+            -webkit-transition: .3s all
+            transition: .3s all
+
+.brand
+  width: 130px
+
+  .hamburger
+    margin-left: -.6rem
+
+
+.src-m
+  width: 45px
+  height: auto
+  padding: .5rem
+
+.nav-header
+  .nav-menu
+    li
+      a
+        color: $white
+        font-weight: 700
+        -webkit-transition: .3s all
+        transition: .3s all
+
+        &:hover
+          background: $secondary
+          color: $white
+          -webkit-transition: .3s all
+          transition: .3s all
+
+#header-m
+  position: fixed
+  width: 100%
+  height: 89vh
+  background: white
+  z-index: 1070
+  margin-top: 11vh
+
+.nav-menu-m
+  li
+    a
+      color: rgba(0,0,0,.7)
+      font-size: 16pt
+      font-weight: 700
+      -webkit-transition: .3s all
+      transition: .3s all
+
+      &:hover
+        background: $secondary
+        color: $white
+        -webkit-transition: .3s all
+        transition: .3s all
+
+.header-space
+  width: 100%
+  height: 70px
+  background: $white
+
+.hamburger-inner
+  background-color: #212121
+
+.hm-d-con
+  padding-top: 10rem
+
+.navhead-m
+  box-shadow: $bot-shadow
+  height: 66px
+  position: fixed
+  z-index: 3
+  width: 100%
+  background: $white
+  top: 0
+
+.space-head
+  height: 66px
+
+.nav-menu
+  box-shadow: $bot-shadow
+  height: 66px
+  z-index: 3
+  width: 100%
+  background: $white
+  position: fixed
+  bottom: 0
+
+.menu-link
+  color: #2f2f2f
+  fill: #2f2f2f
+  font-size: 10pt
+  font-weight: normal
+
+  &:hover
+    color: $tosca
+    fill: $tosca
+
+  &.active
+    color: $tosca
+    fill: $tosca
+
+  svg
+    width: 25px
+    height: 25px
+
+.head-t
+  font-size: 17pt
+  font-weight: 500
+
+.hd-lnk-m
+  white-space: nowrap
+  overflow-y: hidden
+  overflow-x: scroll
+  -webkit-overflow-scrolling: touch
+  -ms-overflow-style: -ms-autohiding-scrollbar
+
+  &::-webkit-scrollbar
+    height: 6px
+    background-color: $cardBody
+    display: none
+
+  &::-webkit-scrollbar-thumb
+    background-color: $primary
+    border-radius: 5px
+
+  &::-webkit-scrollbar-track
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+    background-color: $cardBody
+
+  li
+    display: inline-block
+
+.hd-lnk
+  background: $transparent
+  padding: 6px 10px
+  border-radius: 3px
+  font-size: 12pt
+  font-weight: 500
+  color: rgba(0,0,0,.8)
+  -webkit-transition: .2s all 
+  transition: .2s all
+  border: 1px solid $third
+  width: 102px
+  height: 36px
+  display: block
+  text-align: center
+  
+  &:hover
+    background: $third
+    color: $white
+    box-shadow: 0 18px 40px -12px $third
+    -webkit-transition: .2s all 
+    transition: .2s all
+    text-decoration: none
+
+  &.actived
+    background: $third
+    color: $white
+    box-shadow: 0 18px 40px -12px $third
+    -webkit-transition: .2s all 
+    transition: .2s all
+    text-decoration: none
+
+  &.lnk-filter
+    &:before
+      content: url('../img/filter.svg')
+      width: 15px
+      height: 15px
+      margin-right: .5rem
+      color: rgba(0,0,0,.6)
+
+    &:hover
+      &:before
+        content: url('../img/filter-w.svg')
+
+    &.active
+      &:after
+        content: "•"
+        margin-left: .5rem
+        color: $primary
+
+/*-- /Navbar --*/
+
+/*--- Main ---*/
+
+.src-g
+  .src-inp
+    border: none
+    background: rgb(248,248,248)
+    height: 50px
+    border-radius: 5px
+    padding: 1rem 3.2rem 1rem 1rem
+
+    &:focus
+      outline: none
+      box-shadow: none
+
+    &:active
+      outline: none
+      box-shadow: none
+
+  .src-img
+    top: 12px
+    right: 1rem
+    width: 21px
+
+.category-btn
+  color: $tosca
+  font-size: 10pt
+  padding: .2rem .75rem
+  border: 1px solid $tosca
+  border-radius: 20px
+  margin-bottom: .75rem
+  display: inline-block
+
+.tag-btn
+  background: $cardBody
+  color: rgba(0,0,0,.7)
+  font-size: 10pt
+  padding: .2rem .75rem
+  border-radius: 20px
+  margin-bottom: .75rem
+  display: inline-block
+
+.brand-foot
+  width: 175px
+
+.foot-link
+  color: rgba(0,0,0,.4)
+  font-size: 11pt
+  font-weight: 500
+  padding: 0 .1rem
+
+  a
+    color: rgba(0,0,0,.4)
+
+.message-notif
+  img
+    width: 20px
+    height: 20px
+    right: 38%
+    left: auto
+
+  span
+    font-size: .65rem
+    right: 23%
+    left: auto
+    margin-top: -12px
+    padding: .25rem .35rem
+
+.nav-m
+  background: $white
+  width: 250px
+  position: fixed
+  height: 100%
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1)
+  transition: .3s all
+  -webkit-transition: .3s all
+  z-index: 3
+  display: block
+
+  @media (max-width: 1199.98px)
+    display: none
+
+.bg-nav
+  width: 100%
+  height: 100vh
+  background: rgba(0,0,0,.7)
+  z-index: 2
+  display: none
+  transition: .3s all
+  -webkit-transition: .3s all
+
+.header-t
+  z-index: 3
+  height: 80px
+
+  @media (min-width: 768px)
+    height: 110px
+
+.space-header
+  height: 80px
+
+  @media (min-width: 768px)
+    height: 110px
+
+.card-lg
+  width: 625px
+
+  .c-thumb
+    height: 145px
+
+    @media (min-width: 1400px)
+      height: 235px
+
+  .c-desc
+    div
+      font-size: 16pt
+      font-weight: bold
+      white-space: normal
+      cursor: pointer
+      overflow: hidden
+      text-overflow: ellipsis
+      display: -webkit-box
+      line-height: 23px
+      max-height: 46px
+      -webkit-line-clamp: 2
+      -webkit-box-orient: vertical
+  
+  .c-akun
+    div
+      font-size: 10pt
+      font-weight: normal
+      white-space: normal
+      cursor: pointer
+      color: rgba(0,0,0,.5)
+      display: flex
+      align-items: center
+
+      img
+        width: 32px
+        height: 32px
+        object-fit: cover
+        border-radius: 25px
+        margin-right: 10px
+
+.card-md
+
+  .c-thumb
+    height: 90px
+
+    @media (min-width: 768px)
+      height: 100px
+
+    @media (min-width: 992px)
+      height: 155px
+
+    @media (min-width: 1400px)
+      height: 165px
+
+  .c-desc
+    div
+      font-size: 13pt
+      font-weight: bold
+      white-space: normal
+      cursor: pointer
+      overflow: hidden
+      text-overflow: ellipsis
+      display: -webkit-box
+      line-height: 23px
+      max-height: 46px
+      -webkit-line-clamp: 2
+      -webkit-box-orient: vertical
+
+      @media (min-width: 1400px)
+        font-size: 16pt
+  
+  .c-akun
+    div
+      font-size: 10pt
+      font-weight: normal
+      white-space: normal
+      cursor: pointer
+      color: rgba(0,0,0,.5)
+      display: flex
+      align-items: center
+
+      @media (min-width: 1400px)
+        font-size: 12pt
+
+      img
+        width: 35px
+        height: 35px
+        object-fit: cover
+        border-radius: 25px
+        margin-right: 10px
+
+.card-2
+  -webkit-transition: .2s all 
+  transition: .2s all
+
+  &:hover
+    // box-shadow: 0 18px 40px -12px rgba(0,0,0,.4)
+    // margin-top: -10px
+    -webkit-transition: .2s all 
+    transition: .2s all
+    cursor: pointer
+
+  .c-thumb-2
+    width: 100%
+    height: 195px
+    position: relative
+    display: inline-block
+    margin-bottom: .5rem
+
+    @media (min-width: 768px)
+      height: 104px
+
+    @media (min-width: 992px)
+      height: 150px
+
+    @media (min-width: 1400px)
+      width: 222px
+      height: 150px
+      margin-bottom: 0
+
+
+  .c-desc-2
+    max-width: 650px
+    display: inline-block
+
+    .d-t-2
+      font-size: 14pt
+      font-weight: bold
+      cursor: pointer
+      overflow: hidden
+      text-overflow: ellipsis
+      display: -webkit-box
+      line-height: 22px
+      max-height: 66px
+      -webkit-line-clamp: 3
+      -webkit-box-orient: vertical
+
+      @media (min-width: 1400px)
+        font-size: 16pt
+        overflow: hidden
+        text-overflow: ellipsis
+        display: -webkit-box
+        line-height: 22px
+        max-height: 44px
+        -webkit-line-clamp: 2
+        -webkit-box-orient: vertical
+
+    .d-inf-2
+      font-size: 10pt
+      font-weight: normal
+      cursor: pointer
+      color: rgba(0,0,0,.5)
+      overflow: hidden
+      text-overflow: ellipsis
+      display: -webkit-box
+      line-height: 18px
+      max-height: 36px
+      -webkit-line-clamp: 2
+      -webkit-box-orient: vertical
+
+      @media (min-width: 1400px)
+        font-size: 12pt
+
+    .d-akun-2
+      div
+        font-size: 10pt
+        font-weight: normal
+        white-space: normal
+        cursor: pointer
+        color: rgba(0,0,0,.5)
+        display: flex
+        align-items: center
+
+        @media (min-width: 1400px)
+          font-size: 12pt
+
+        img
+          width: 35px
+          height: 35px
+          object-fit: cover
+          border-radius: 25px
+          margin-right: 10px
+
+.card-sm
+  -webkit-transition: .2s all 
+  transition: .2s all
+
+  &:hover
+    // box-shadow: 0 18px 40px -12px rgba(0,0,0,.4)
+    // margin-top: -10px
+    -webkit-transition: .2s all 
+    transition: .2s all
+    cursor: pointer
+
+  .c-thumb-sm
+    width: 132px
+    height: 85px
+    position: relative
+    display: inline-block
+
+    @media (min-width: 1400px)
+      width: 116px
+      height: 83px
+
+    .thumb-cnt-sm
+      div
+        font-size: 8pt
+        z-index: 1
+
+        @media (min-width: 1400px)
+          font-size: 10pt
+
+
+  .c-desc-sm
+    max-width: 650px
+    display: inline-block
+
+    .d-t-sm
+      font-size: 9pt
+      font-weight: bold
+      cursor: pointer
+
+      @media (min-width: 1400px)
+        font-size: 12pt
+
+    .d-cat-sm
+      font-size: 9pt
+      font-weight: normal
+      cursor: pointer
+
+      @media (min-width: 1400px)
+        font-size: 11pt
+
+    .d-inf-sm
+      font-size: 9pt
+      font-weight: normal
+      cursor: pointer
+      color: rgba(0,0,0,.5)
+
+      @media (min-width: 1400px)
+        font-size: 11pt
+
+.high-sec
+  white-space: nowrap
+  overflow-x: scroll
+  overflow-y: hidden
+  -webkit-overflow-scrolling: touch
+  -ms-overflow-style: -ms-autohiding-scrollbar
+
+  &::-webkit-scrollbar
+    height: 4px
+    background-color: $cardBody
+
+  &::-webkit-scrollbar-thumb
+    background-color: $tosca
+    border-radius: 5px
+
+  &::-webkit-scrollbar-track
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+    background-color: $cardBody
+
+// Swiper nav
+.swip-prev
+  cursor: pointer
+  background: $white
+  border-radius: 50px
+  padding: .35rem .75rem
+  margin-right: .5rem
+
+  img
+    width: 12px
+    height: auto
+    -webkit-transform: scaleX(-1)
+    transform: scaleX(-1)
+
+  &:focus
+    outline: 0
+    box-shadow: none
+
+  &:active
+    outline: 0
+    box-shadow: none
+
+.swip-next
+  cursor: pointer
+  background: $white
+  border-radius: 50px
+  padding: .35rem .75rem
+
+  img
+    width: 12px
+    height: auto
+
+  &:focus
+    outline: 0
+    box-shadow: none
+
+  &:active
+    outline: 0
+    box-shadow: none
+
+.p-main
+  padding-left: 250px
+
+  @media (max-width: 1199.98px)
+    padding-left: 0
+
+.swiper-wrapper
+  display: block !important
+  white-space: nowrap
+
+.subs-card
+  background: #f7f7f7
+  width: 100%
+  padding: 2rem 1rem
+
+  @media (max-width: 991.98px)
+    width: 100%
+
+  .subs-t
+    font-size: 16pt
+
+  .s-form
+    form
+      input
+        &[type="text"]
+          padding: .5rem 1rem
+          font-size: 11pt
+          width: 260px
+          height: 48px
+          text-align: center
+
+          @media (min-width: 768px)
+            width: 238px
+            height: 48px
+
+          @media (min-width: 1200px)
+
+
+        &[type="button"]
+          padding: .5rem 1rem
+          font-size: 11pt
+          width: 260px
+          height: 48px
+          text-align: center
+          border: none
+          color: #ffffff
+          background: #ed3a25
+
+          @media (min-width: 768px)
+            width: 238px
+            height: 48px
+
+.c-shadow
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.14)
+  -webkit-box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.14)
+
+.t-desc
+  font-size: 12pt
+  font-weight: normal
+  cursor: pointer
+  color: rgba(0,0,0,.5)
+
+.high-c
+  .owl-nav
+    position: absolute
+    top: 0
+    display: inline-block !important
+    right: 0
+    margin-top: -63px
+    margin-right: -5px
+    
+    .owl-prev
+      background: rgb(255,255,255) !important
+      border-radius: 50%
+      width: 35px
+      height: 35px
+      text-align: center
+
+      &:focus
+        outline: none
+        box-shadow: none
+
+      &:active
+        outline: none
+        box-shadow: none
+
+      img
+        width: 12px
+        height: 12px
+        -webkit-transform: scaleX(-1)
+        transform: scaleX(-1)
+
+    .owl-next
+      background: rgb(255,255,255) !important
+      border-radius: 50%
+      width: 35px
+      height: 35px
+      text-align: center
+
+      &:focus
+        outline: none
+        box-shadow: none
+
+      &:active
+        outline: none
+        box-shadow: none
+
+      img
+        width: 12px
+        height: 12px
+
+/*--- /Main ---*/

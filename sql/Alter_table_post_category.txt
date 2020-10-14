@@ -1,0 +1,1 @@
+ALTER TABLE `post_category` ADD `slug_mobile` VARCHAR(25) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL AFTER `slug`;

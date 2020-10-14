@@ -1,0 +1,3 @@
+ALTER TABLE `post_category` ADD `favorite` INT(1) NULL DEFAULT '0' AFTER `parent`;
+ALTER TABLE `post_category` ADD `new` INT(1) NULL DEFAULT '0' AFTER `favorite`;
+ALTER TABLE `post_category` ADD `section` INT(10) NOT NULL DEFAULT '0' AFTER `new`;

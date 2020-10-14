@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="keywords" content="your, tags"/>
+    <meta name="description" content="150 words"/>
+    <meta name="subject" content="your website's subject">
+    <meta name="copyright" content="company name">
+    <meta name="language" content="ES">
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="name, email@gmail.com">
+    <meta name="url" content="http://www.websiteaddrress.com">
+    <meta name="identifier-URL" content="http://www.websiteaddress.com">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+
+    <!-- Select one -->
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    <link rel="fluid-icon" type="image/png" href="/fluid-icon.png" />
+
+    <!-- Import Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>Kami Bijak</title>
+
+    <!-- Import Animate CSS -->
+    <link rel="stylesheet" href="./assets/css/animate/animate.css" />
+    
+    <!-- Import Hamburgers CSS -->
+    <link rel="stylesheet" href="./assets/css/hamburgers/hamburgers.css" />
+
+    <!-- Import Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
+
+    <!-- Import Owl Carousel CSS -->
+    <link rel="stylesheet" href="./assets/css/owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owlcarousel/owl.theme.default.min.css" />
+    
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" integrity="sha256-XwfUNXGiAjWyUGBhyXKdkRedMrizx1Ejqo/NReYNdUE=" crossorigin="anonymous" />
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudfla4re.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+
+
+
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header class="header-t position-fixed w-100">
+      <div class="nav-top dark-grey row mx-0 d-none d-md-flex">
+        <div class="col-4 col-xl-2 text-center" style="border-right: 1px solid white;">
+          <span class="text-white nav-top-text">Senin, 24 Desember, 2018</span>
+        </div>
+        <div class="col-8 col-xl-10 pl-xl-5">
+          <a href="#" class="text-white nav-top-text px-4">Advertise with us</a>
+          <a href="#" class="text-white nav-top-text px-4">Help</a>
+        </div>
+      </div>
+      <div class="navbar-kb white row mx-0">
+        
+          <div class="col-3 col-xl-2 align-self-center">
+            <div class="w-100 d-flex align-items-center">
+              <!-- <div class="w-25" style="display: inline-grid;">
+                <button type="button" class="float-left btn-nav" ><img src="assets/img/menu.svg" alt="menu" style="width: 25px;height: 25px;"/> </button>
+              </div>
+              <div class="w-50 d-none d-lg-inline-block" style="display: inline-grid;"> -->
+              <!-- <button id="btn-nav" class="hamburger mr-2 is-active" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button> -->
+                <button id="btn-nav" type="button" class="float-left btn-nav mr-2" ><img src="assets/img/menu.svg" alt="menu" style="width: 25px;height: 25px;"/> </button>
+                <a href="/"><img src="assets/img/logo.png" class="" alt="logo" style="width: 140px; height: auto;" /></a>
+              <!-- </div> -->
+            </div>
+
+          </div>
+          <div class="col-4 col-xl-4 col-lg-3 align-self-center d-none d-lg-inline-block">
+            <div class="w-100">
+              <div class="src-g w-100 position-relative">
+                <input type="text" class="src-inp w-100" placeholder="Cari disini..."/>
+                <div class="src-img position-absolute" ><img src="./assets/img/src.png" class="w-100 h-auto" /></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 col-xl-4 col-lg-6 align-self-center d-none d-lg-inline-block">
+            <ul class="list-unstyled">
+              <li class="float-left"><a href="#" class="text-grey">INFOSIANA</a></li>
+              <li class="float-left"><a href="#" class="text-grey">HIBURAN & GAYA HIDUP</a></li>
+              <li class="float-left"><a href="#" class="text-grey">KULINER</a></li>
+              <!-- <li class="float-left"><a href="#" class="text-white btn-upload red ">Upload</a></li> -->
+            </ul>
+          </div>
+          <!-- <div class="col-2 col-lg-3 align-self-center d-none d-lg-inline-block">
+            <div class="w-100 d-flex align-items-center">
+              <div class="notif-sec " style="display: inline-grid;width: 15%;">
+                <div class="message-notif position-relative">
+                  <img src="assets/img/mail.svg" class="position-absolute align-top" alt="mess" />
+                  <span class="red rounded-circle position-absolute text-white align-bottom">25</span>
+                </div>
+              </div>
+              <div class="notif-sec " style="display: inline-grid;width: 15%;">
+                <div class="message-notif position-relative">
+                  <img src="assets/img/notif.svg" class="position-absolute align-top" alt="mess" />
+                  <span class="red rounded-circle position-absolute text-white align-bottom">54</span>
+                </div>
+              </div>
+              <div class="notif-sec d-inline-flex align-items-center justify-content-end" style="width: 70%;">
+                <div class="message-notif position-relative text-right d-inline-flex align-items-center">
+                  <div class="text-grey d-inline-flex" style="font-size: 12pt;">Ahmad Rifki Fachrudin</div>
+                  <img src="assets/img/ava.jpg" class="align-top rounded-circle ml-3" style="width: 35px;height: 35px;" alt="mess" />
+                </div>
+              </div>
+            </div>
+          </div> -->
+        
+      </div>
+    </header>
+    <div class="space-header"></div>
+
+    <!-- /Header -->
+
+    <!-- Nav Menu -->
+    <nav class="nav-m" style="display: none;">
+      <div class="row mx-0">
+        <div class="col-12 px-0">
+
+          <div class="row mx-0 mb-3 bb-1">
+            <div class="col-12 px-0 py-3">
+              <ul class="list-unstyled mb-0">
+                <li class="px-4 py-3">
+                  <a href="/" class="text-black fs-14">Home</a>
+                </li>
+                <li class="px-4 py-3">
+                  <a href="/" class="text-black fs-14">Pilihan Editor</a>
+                </li>
+                <li class="px-4 py-3">
+                  <a href="/" class="text-black fs-14">Trending View</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row mx-0 mb-3 bb-1">
+            <div class="col-12 px-0 py-3">
+              <ul class="list-unstyled mb-0">
+                <li class="px-4 py-3">
+                  <a href="/" class="text-black fs-14">History</a>
+                </li>
+                <li class="px-4 py-3">
+                  <a href="/" class="text-black fs-14">Tersimpan</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row mx-0 mb-3 bb-1">
+            <div class="col-12 px-0 py-3">
+              <ul class="list-unstyled mb-0">
+                <li class="px-4 py-3">
+                  <a href="/" class="text-black fs-14">Setting</a>
+                </li>
+                <li class="px-4 py-3">
+                  <a href="/" class="text-black fs-14">Help</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row mx-0">
+            <div class="col-12 px-0 py-3">
+              <!-- <div class="d-inline-block brand-foot mb-4"><img src="./assets/img/logo.png" class="w-100 h-auto" /></div> -->
+              <div class="t-foot w-100">
+                <div class="row mx-0 px-4 mb-4">
+                  <div class="col-12 px-0">
+                    <a href="/" class="foot-link">About</a>
+                    <a href="/" class="foot-link">Contact us</a>
+                    <a href="/" class="foot-link">Advertise</a>
+                    <a href="/" class="foot-link">Developer</a>
+                  </div>
+                </div>
+                <div class="row mx-0 px-4 mb-4">
+                  <div class="col-12 px-0">
+                    <div class="foot-link">Terms Privacy Policy & Safety Test &copy; 2018 <a href="/">Kamibijak.com</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </nav>
+    <!-- /Nav Menu -->
+
+    <!-- Main content -->
+    <div class="position-fixed bg-nav"></div>
+    <main class="main">
+
+      <section class="w-100 pt-4 pb-5 px-3 f7">
+        <div class="container">
+
+          <div class="row mx-0 mb-3 align-items-center">
+            <div class="col-6 px-0 mb-3">
+              <h5 class="text-tosca mb-0"><strong>Highlight</strong></h5>
+            </div>
+            <!-- <div class="col-6 px-0 text-right">
+              <ul class="list-unstyled mb-0 d-inline-block">
+                <li class="float-left"><div class="swip-prev"><img src="./assets/img/next.svg" draggable="false" /></div></li>
+                <li class="float-left"><div class="swip-next"><img src="./assets/img/next.svg" draggable="false" /></div></li>
+              </ul>
+              
+            </div> -->
+          </div>
+          
+  
+          <div class="row mx-0">
+            <div class="col-12 px-0">
+
+              <div class="owl-carousel owl-theme high-c">
+                <div class="item">
+                  <div class="d-inline-block card-lg transparent w-100">
+                    <div class="c-thumb position-relative mb-3" >
+                      <img src="./assets/img/ava.jpg" class="w-100 h-100 of-cover position-absolute" />
+                      <div class="w-100 h-100 position-absolute" style="background-image: linear-gradient(rgba(0,0,0,0) 60%, rgba(0,0,0,.7));"></div>
+                      <div class="thumb-cnt px-3">
+                        <div class="row" style="height: 165px;">
+                          <div class="col-12 py-2">
+                            <div class="row mx-0">
+                              <div class="col-6 px-0">
+                                
+                              </div>
+                              <div class="col-6 px-0 text-right">
+                                <div class="tosca text-white px-3 py-1 d-inline-block" style="font-size: 10pt;">03.23</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="c-desc mb-2">
+                      <div onclick="window.location='detail.html';">Fakta Tsunami Selat Sunda yang Mengerikan</div>
+                    </div>
+                    <div class="c-akun mb-3">
+                      <div onclick="window.location='detail.html';">
+                        <img src="./assets/img/ava.jpg" />
+                        Rifan &nbsp;&nbsp; 20 min ago
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="d-inline-block card-lg transparent w-100">
+                    <div class="c-thumb position-relative mb-3" >
+                      <img src="./assets/img/ava.jpg" class="w-100 h-100 of-cover position-absolute" />
+                      <div class="w-100 h-100 position-absolute" style="background-image: linear-gradient(rgba(0,0,0,0) 60%, rgba(0,0,0,.7));"></div>
+                      <div class="thumb-cnt px-3">
+                        <div class="row" style="height: 165px;">
+                          <div class="col-12 py-2">
+                            <div class="row mx-0">
+                              <div class="col-6 px-0">
+                                
+                              </div>
+                              <div class="col-6 px-0 text-right">
+                                <div class="tosca text-white px-3 py-1 d-inline-block" style="font-size: 10pt;">03.23</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="c-desc mb-2">
+                      <div onclick="window.location='detail.html';">Fakta Tsunami Selat Sunda yang Mengerikan</div>
+                    </div>
+                    <div class="c-akun mb-3">
+                      <div onclick="window.location='detail.html';">
+                        <img src="./assets/img/ava.jpg" />
+                        Rifan &nbsp;&nbsp; 20 min ago
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+  
+              <!-- <div class="swiper-container high-c">
+                <div class="swiper-wrapper">
+  
+                  <div class="d-inline-block mr-3 card-lg swiper-slide text-left transparent">
+                    <div class="c-thumb position-relative mb-3" >
+                      <img src="./assets/img/ava.jpg" class="w-100 h-100 of-cover position-absolute" />
+                      <div class="w-100 h-100 position-absolute" style="background-image: linear-gradient(rgba(0,0,0,0) 60%, rgba(0,0,0,.7));"></div>
+                      <div class="thumb-cnt px-3">
+                        <div class="row" style="height: 165px;">
+                          <div class="col-12 py-2">
+                            <div class="row mx-0">
+                              <div class="col-6 px-0">
+                                
+                              </div>
+                              <div class="col-6 px-0 text-right">
+                                <div class="tosca text-white px-3 py-1 d-inline-block" style="font-size: 10pt;">03.23</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="c-desc mb-2">
+                      <div onclick="window.location='detail.html';">Fakta Tsunami Selat Sunda yang Mengerikan</div>
+                    </div>
+                    <div class="c-akun mb-3">
+                      <div onclick="window.location='detail.html';">
+                        <img src="./assets/img/ava.jpg" />
+                        Rifan &nbsp;&nbsp; 20 min ago
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="d-inline-block mr-3 card-lg swiper-slide text-left transparent">
+                    <div class="c-thumb position-relative mb-3" >
+                      <img src="./assets/img/ava.jpg" class="w-100 h-100 of-cover position-absolute" />
+                      <div class="w-100 h-100 position-absolute" style="background-image: linear-gradient(rgba(0,0,0,0) 60%, rgba(0,0,0,.7));"></div>
+                      <div class="thumb-cnt px-3">
+                        <div class="row" style="height: 165px;">
+                          <div class="col-12 py-2">
+                            <div class="row mx-0">
+                              <div class="col-6 px-0">
+                                
+                              </div>
+                              <div class="col-6 px-0 text-right">
+                                <div class="tosca text-white px-3 py-1 d-inline-block" style="font-size: 10pt;">03.23</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="c-desc mb-2">
+                      <div onclick="window.location='detail.html';">Fakta Tsunami Selat Sunda yang Mengerikan</div>
+                    </div>
+                    <div class="c-akun mb-3">
+                      <div onclick="window.location='detail.html';">
+                        <img src="./assets/img/ava.jpg" />
+                        Rifan &nbsp;&nbsp; 20 min ago
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="d-inline-block mr-3 card-lg swiper-slide text-left transparent">
+                    <div class="c-thumb position-relative mb-3" >
+                      <img src="./assets/img/ava.jpg" class="w-100 h-100 of-cover position-absolute" />
+                      <div class="w-100 h-100 position-absolute" style="background-image: linear-gradient(rgba(0,0,0,0) 60%, rgba(0,0,0,.7));"></div>
+                      <div class="thumb-cnt px-3">
+                        <div class="row" style="height: 165px;">
+                          <div class="col-12 py-2">
+                            <div class="row mx-0">
+                              <div class="col-6 px-0">
+                                
+                              </div>
+                              <div class="col-6 px-0 text-right">
+                                <div class="tosca text-white px-3 py-1 d-inline-block" style="font-size: 10pt;">03.23</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="c-desc mb-2">
+                      <div onclick="window.location='detail.html';">Fakta Tsunami Selat Sunda yang Mengerikan</div>
+                    </div>
+                    <div class="c-akun mb-3">
+                      <div onclick="window.location='detail.html';">
+                        <img src="./assets/img/ava.jpg" />
+                        Rifan &nbsp;&nbsp; 20 min ago
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="d-inline-block mr-3 card-lg swiper-slide text-left transparent">
+                    <div class="c-thumb position-relative mb-3" >
+                      <img src="./assets/img/ava.jpg" class="w-100 h-100 of-cover position-absolute" />
+                      <div class="w-100 h-100 position-absolute" style="background-image: linear-gradient(rgba(0,0,0,0) 60%, rgba(0,0,0,.7));"></div>
+                      <div class="thumb-cnt px-3">
+                        <div class="row" style="height: 165px;">
+                          <div class="col-12 py-2">
+                            <div class="row mx-0">
+                              <div class="col-6 px-0">
+                                
+                              </div>
+                              <div class="col-6 px-0 text-right">
+                                <div class="tosca text-white px-3 py-1 d-inline-block" style="font-size: 10pt;">03.23</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="c-desc mb-2">
+                      <div onclick="window.location='detail.html';">Fakta Tsunami Selat Sunda yang Mengerikan</div>
+                    </div>
+                    <div class="c-akun mb-3">
+                      <div onclick="window.location='detail.html';">
+                        <img src="./assets/img/ava.jpg" />
+                        Rifan &nbsp;&nbsp; 20 min ago
+                      </div>
+                    </div>
+                  </div>
+                    
+                </div>
+  
+              </div> -->
+  
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+      <section class="w-100 pt-5 pb-5 px-3 white">
+        <div class="container">
+          <div class="row mb-5">
+              <div class="col-12">
+    
+                <div class="row">
+                  <div class="col-12 col-md-7 col-xl-8">
+    
+                    <div class="row mx-0 mb-3 align-items-center">
+                      <div class="col-12 px-0">
+                        <h5 class="text-tosca mb-0"><strong>Video Terbaru</strong></h5>
+                      </div>
+                    </div>
+    
+                    <div class="row mb-3">
+                      <div class="col-12">
+                        <div class="row card-2 mb-3 wow fadeIn">
+                          <div class="col-12 col-md-5 col-xl-4" >
+                            <div class="c-thumb-2">
+                              <img src="./assets/img/ava.jpg" class="w-100 h-100 of-cover position-absolute" />
+                              <div class="thumb-cnt px-3 d-flex align-items-end justify-content-end h-100">
+                                <div class="tosca text-white px-2 py-1 d-inline-flex mb-2" style="font-size: 10pt;z-index: 1;">03.23</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-7 col-xl-8">
+                            <div class="c-desc-2">
+                              <div class="d-t-2 mb-3" onclick="window.location='detail.html';">Fakta Tsunami Selat Sunda yang Mengerikan Fakta Tsunami Selat Sunda yang Mengerikan Fakta Tsunami Selat Sunda yang Mengerikan</div>
+                              <div class="d-inf-2 mb-3 pr-5" onclick="window.location='detail.html';">Gelombang tsunami menghanyutkan sebagian wilayah pesisir Serang, Pandeglang dan Lampung Selatan pada Sabtu (22/12) lalu.</div>
+                              <div class="d-akun-2 mb-3">
+                                <div onclick="window.location='detail.html';">
+                                  <img src="./assets/img/ava.jpg" />
+                                  Rifan &nbsp;&nbsp; 20 min ago
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="row card-2 mb-3 wow fadeIn">
+                          <div class="col-12 col-md-5 col-xl-4" >
+                            <div class="c-thumb-2">
+                              <img src="./assets/img/ava.jpg" class="w-100 h-100 of-cover position-absolute" />
+                              <div class="thumb-cnt px-3 d-flex align-items-end justify-content-end h-100">
+                                <div class="tosca text-white px-2 py-1 d-inline-flex mb-2" style="font-size: 10pt;z-index: 1;">03.23</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-7 col-xl-8">
+                            <div class="c-desc-2">
+                              <div class="d-t-2 mb-3" onclick="window.location='detail.html';">Fakta Tsunami Selat Sunda yang Mengerikan</div>
+                              <div class="d-inf-2 mb-3 pr-5" onclick="window.location='detail.html';">Gelombang tsunami menghanyutkan sebagian wilayah pesisir Serang, Pandeglang dan Lampung Selatan pada Sabtu (22/12) lalu.</div>
+                              <div class="d-akun-2 mb-3">
+                                <div onclick="window.location='detail.html';">
+                                  <img src="./assets/img/ava.jpg" />
+                                  Rifan &nbsp;&nbsp; 20 min ago
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="row card-2 mb-3 wow fadeIn">
+                          <div class="col-12 col-md-5 col-xl-4" >
+                            <div class="c-thumb-2">
+                              <img src="./assets/img/ava.jpg" class="w-100 h-100 of-cover position-absolute" />
+                              <div class="thumb-cnt px-3 d-flex align-items-end justify-content-end h-100">
+                                <div class="tosca text-white px-2 py-1 d-inline-flex mb-2" style="font-size: 10pt;z-index: 1;">03.23</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-7 col-xl-8">
+                            <div class="c-desc-2">
+                              <div class="d-t-2 mb-3" onclick="window.location='detail.html';">Fakta Tsunami Selat Sunda yang Mengerikan</div>
+                              <div class="d-inf-2 mb-3 pr-5" onclick="window.location='detail.html';">Gelombang tsunami menghanyutkan sebagian wilayah pesisir Serang, Pandeglang dan Lampung Selatan pada Sabtu (22/12) lalu.</div>
+                              <div class="d-akun-2 mb-3">
+                                <div onclick="window.location='detail.html';">
+                                  <img src="./assets/img/ava.jpg" />
+                                  Rifan &nbsp;&nbsp; 20 min ago
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="row card-2 mb-3 wow fadeIn">
+                          <div class="col-12 col-md-5 col-xl-4" >
+                            <div class="c-thumb-2">
+                              <img src="./assets/img/ava.jpg" class="w-100 h-100 of-cover position-absolute" />
+                              <div class="thumb-cnt px-3 d-flex align-items-end justify-content-end h-100">
+                                <div class="tosca text-white px-2 py-1 d-inline-flex mb-2" style="font-size: 10pt;z-index: 1;">03.23</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-7 col-xl-8">
+                            <div class="c-desc-2">
+                              <div class="d-t-2 mb-3" onclick="window.location='detail.html';">Fakta Tsunami Selat Sunda yang Mengerikan</div>
+                              <div class="d-inf-2 mb-3 pr-5" onclick="window.location='detail.html';">Gelombang tsunami menghanyutkan sebagian wilayah pesisir Serang, Pandeglang dan Lampung Selatan pada Sabtu (22/12) lalu.</div>
+                              <div class="d-akun-2 mb-3">
+                                <div onclick="window.location='detail.html';">
+                                  <img src="./assets/img/ava.jpg" />
+                                  Rifan &nbsp;&nbsp; 20 min ago
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="col-12 col-md-5 col-xl-4">
+                    
+                    <div class="subs-card text-center mb-5">
+                      <div class="d-inline-block mb-5 subs-t">
+                        <strong>Subscribe to our<br />Newsletter</strong>
+                      </div>
+                      <div class="s-form">
+                        <form action="">
+                          <input type="text" class="mb-3" placeholder="Enter your email address"  />
+                          <input type="button" class="mb-3" value="Subscribe"  />
+                          <div class="text-center" style="font-size: 10pt;font-weight: normal;color: rgba(0,0,0,.5);">Don't worry, we don't spam</div>
+                        </form>
+                      </div>
+                    </div>
+    
+                    <div class="foll-sec">
+                      <h5><stron>Follow us</stron></h5>
+                      <div class="foll-soc mb-2 w-100" style="height: 40px;background: #3B5998;"></div>
+                      <div class="foll-soc mb-2 w-100" style="height: 40px;background: #3B5998;"></div>
+                      <div class="foll-soc mb-2 w-100" style="height: 40px;background: #3B5998;"></div>
+                      <div class="foll-soc mb-2 w-100" style="height: 40px;background: #3B5998;"></div>
+                    </div>
+    
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+    
+            <div class="row mb-3">
+              <div class="col-12">
+    
+                <div class="row mx-0 mb-3 align-items-center">
+                  <div class="col-12 px-0">
+                    <h5 class="text-tosca mb-0"><strong>Top Channel</strong></h5>
+                  </div>
+                </div>
+    
+                <div class="row">
+                  <div class="col-6 col-md-3 col-xl-3">
+                    <div class="d-inline-block card-md text-left transparent wow fadeIn">
+                      <div class="c-thumb position-relative mb-3" >
+                        <img src="./assets/img/ava.jpg" class="w-100 h-100 of-cover position-absolute" />
+                        <div class="thumb-cnt px-3 d-flex align-items-end justify-content-end h-100">
+                          <div class="tosca text-white px-3 py-1 d-inline-flex mb-2" style="font-size: 10pt;z-index: 1;">03.23</div>
+                        </div>
+                      </div>
+                      <div class="c-desc mb-2">
+                        <div onclick="window.location='detail.html';">Fakta Tsunami Selat Sunda yang Mengerikan Fakta Tsunami Selat Sunda yang Mengerikan</div>
+                      </div>
+                      <div class="c-akun mb-3">
+                        <div onclick="window.location='detail.html';">
+                          <img src="./assets/img/ava.jpg" />
+                          Rifan &nbsp;&nbsp; 20 min ago
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 col-xl-3">
+                    <div class="d-inline-block card-md text-left transparent wow fadeIn">
+                      <div class="c-thumb position-relative mb-3" >
+                        <img src="./assets/img/ava.jpg" class="w-100 h-100 of-cover position-absolute" />
+                        <div class="thumb-cnt px-3 d-flex align-items-end justify-content-end h-100">
+                          <div class="tosca text-white px-3 py-1 d-inline-flex mb-2" style="font-size: 10pt;z-index: 1;">03.23</div>
+                        </div>
+                      </div>
+                      <div class="c-desc mb-2">
+                        <div onclick="window.location='detail.html';">Fakta Tsunami Selat Sunda yang Mengerikan</div>
+                      </div>
+                      <div class="c-akun mb-3">
+                        <div onclick="window.location='detail.html';">
+                          <img src="./assets/img/ava.jpg" />
+                          Rifan &nbsp;&nbsp; 20 min ago
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 col-xl-3">
+                    <div class="d-inline-block card-md text-left transparent wow fadeIn">
+                      <div class="c-thumb position-relative mb-3" >
+                        <img src="./assets/img/ava.jpg" class="w-100 h-100 of-cover position-absolute" />
+                        <div class="thumb-cnt px-3 d-flex align-items-end justify-content-end h-100">
+                          <div class="tosca text-white px-3 py-1 d-inline-flex mb-2" style="font-size: 10pt;z-index: 1;">03.23</div>
+                        </div>
+                      </div>
+                      <div class="c-desc mb-2">
+                        <div onclick="window.location='detail.html';">Fakta Tsunami Selat Sunda yang Mengerikan</div>
+                      </div>
+                      <div class="c-akun mb-3">
+                        <div onclick="window.location='detail.html';">
+                          <img src="./assets/img/ava.jpg" />
+                          Rifan &nbsp;&nbsp; 20 min ago
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 col-xl-3">
+                    <div class="d-inline-block card-md text-left transparent wow fadeIn">
+                      <div class="c-thumb position-relative mb-3" >
+                        <img src="./assets/img/ava.jpg" class="w-100 h-100 of-cover position-absolute" />
+                        <div class="thumb-cnt px-3 d-flex align-items-end justify-content-end h-100">
+                          <div class="tosca text-white px-3 py-1 d-inline-flex mb-2" style="font-size: 10pt;z-index: 1;">03.23</div>
+                        </div>
+                      </div>
+                      <div class="c-desc mb-2">
+                        <div onclick="window.location='detail.html';">Fakta Tsunami Selat Sunda yang Mengerikan</div>
+                      </div>
+                      <div class="c-akun mb-3">
+                        <div onclick="window.location='detail.html';">
+                          <img src="./assets/img/ava.jpg" />
+                          Rifan &nbsp;&nbsp; 20 min ago
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <br />
+                <hr />
+    
+              </div>
+            </div>
+    
+            <div class="row mb-5">
+              <div class="col-12">
+    
+                <div class="row">
+                  <div class="col-12 col-md-7 col-xl-8">
+    
+                    <div class="row mb-3">
+                      <div class="col-12">
+                        <div class="row card-2 mb-3 wow fadeIn">
+                          <div class="col-4 col-md-5 col-xl-4" >
+                            <div class="c-thumb-2">
+                              <img src="./assets/img/ava.jpg" class="w-100 h-100 of-cover position-absolute" />
+                              <div class="thumb-cnt px-3 d-flex align-items-end justify-content-end h-100">
+                                <div class="tosca text-white px-2 py-1 d-inline-flex mb-2" style="font-size: 10pt;z-index: 1;">03.23</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-8 col-md-7 col-xl-8">
+                            <div class="c-desc-2">
+                              <div class="d-t-2 mb-3" onclick="window.location='detail.html';">Fakta Tsunami Selat Sunda yang Mengerikan</div>
+                              <div class="d-inf-2 mb-3 pr-5" onclick="window.location='detail.html';">Gelombang tsunami menghanyutkan sebagian wilayah pesisir Serang, Pandeglang dan Lampung Selatan pada Sabtu (22/12) lalu.</div>
+                              <div class="d-akun-2 mb-3">
+                                <div onclick="window.location='detail.html';">
+                                  <img src="./assets/img/ava.jpg" />
+                                  Rifan &nbsp;&nbsp; 20 min ago
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="row card-2 mb-3 wow fadeIn">
+                          <div class="col-4 col-md-5 col-xl-4" >
+                            <div class="c-thumb-2">
+                              <img src="./assets/img/ava.jpg" class="w-100 h-100 of-cover position-absolute" />
+                              <div class="thumb-cnt px-3 d-flex align-items-end justify-content-end h-100">
+                                <div class="tosca text-white px-2 py-1 d-inline-flex mb-2" style="font-size: 10pt;z-index: 1;">03.23</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-8 col-md-7 col-xl-8">
+                            <div class="c-desc-2">
+                              <div class="d-t-2 mb-3" onclick="window.location='detail.html';">Fakta Tsunami Selat Sunda yang Mengerikan</div>
+                              <div class="d-inf-2 mb-3 pr-5" onclick="window.location='detail.html';">Gelombang tsunami menghanyutkan sebagian wilayah pesisir Serang, Pandeglang dan Lampung Selatan pada Sabtu (22/12) lalu.</div>
+                              <div class="d-akun-2 mb-3">
+                                <div onclick="window.location='detail.html';">
+                                  <img src="./assets/img/ava.jpg" />
+                                  Rifan &nbsp;&nbsp; 20 min ago
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="row card-2 mb-3 wow fadeIn">
+                          <div class="col-4 col-md-5 col-xl-4" >
+                            <div class="c-thumb-2">
+                              <img src="./assets/img/ava.jpg" class="w-100 h-100 of-cover position-absolute" />
+                              <div class="thumb-cnt px-3 d-flex align-items-end justify-content-end h-100">
+                                <div class="tosca text-white px-2 py-1 d-inline-flex mb-2" style="font-size: 10pt;z-index: 1;">03.23</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-8 col-md-7 col-xl-8">
+                            <div class="c-desc-2">
+                              <div class="d-t-2 mb-3" onclick="window.location='detail.html';">Fakta Tsunami Selat Sunda yang Mengerikan</div>
+                              <div class="d-inf-2 mb-3 pr-5" onclick="window.location='detail.html';">Gelombang tsunami menghanyutkan sebagian wilayah pesisir Serang, Pandeglang dan Lampung Selatan pada Sabtu (22/12) lalu.</div>
+                              <div class="d-akun-2 mb-3">
+                                <div onclick="window.location='detail.html';">
+                                  <img src="./assets/img/ava.jpg" />
+                                  Rifan &nbsp;&nbsp; 20 min ago
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="row card-2 mb-3 wow fadeIn">
+                          <div class="col-4 col-md-5 col-xl-4" >
+                            <div class="c-thumb-2">
+                              <img src="./assets/img/ava.jpg" class="w-100 h-100 of-cover position-absolute" />
+                              <div class="thumb-cnt px-3 d-flex align-items-end justify-content-end h-100">
+                                <div class="tosca text-white px-2 py-1 d-inline-flex mb-2" style="font-size: 10pt;z-index: 1;">03.23</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-8 col-md-7 col-xl-8">
+                            <div class="c-desc-2">
+                              <div class="d-t-2 mb-3" onclick="window.location='detail.html';">Fakta Tsunami Selat Sunda yang Mengerikan</div>
+                              <div class="d-inf-2 mb-3 pr-5" onclick="window.location='detail.html';">Gelombang tsunami menghanyutkan sebagian wilayah pesisir Serang, Pandeglang dan Lampung Selatan pada Sabtu (22/12) lalu.</div>
+                              <div class="d-akun-2 mb-3">
+                                <div onclick="window.location='detail.html';">
+                                  <img src="./assets/img/ava.jpg" />
+                                  Rifan &nbsp;&nbsp; 20 min ago
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+    
+                        <button class="tosca text-white w-100" style="border: none;padding: .75rem;border-radius: 4px;">LOAD MORE</button>
+                        
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="col-12 col-md-5 col-xl-4">
+    
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+        </div>
+      </section>
+
+      
+
+    </main>
+    <!-- /Main content -->
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+    <!-- /Footer -->
+
+    <!-- Import Jquery 3.3.1 -->
+    <script mtype="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
+
+    <!-- Import Bootstrap JS -->
+    <script type="text/javascript" src="./assets/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Import Owl Carousel JS -->
+    <script type="text/javascript" src="./assets/js/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js" integrity="sha256-uckMYBvIGtce2L5Vf/mwld5arpR5JuhAEeJyjPZSUKY=" crossorigin="anonymous"></script>
+
+    <!-- Import WOW JS -->
+    <script type="text/javascript" src="./assets/js/wow/wow.min.js"></script>
+
+    <!-- Import Javascript -->
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+
+    <!--Start of Tawk.to Script-->
+    <!-- <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5d2c0137bfcb827ab0cbc051/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script> -->
+
+    <!--End of Tawk.to Script-->
+
+  </body>
+</html>

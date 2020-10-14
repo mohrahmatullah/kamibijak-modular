@@ -1,0 +1,1 @@
+ALTER TABLE `post` ADD `type_post` VARCHAR(25) NULL AFTER `microsite`;

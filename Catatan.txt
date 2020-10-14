@@ -1,0 +1,2 @@
+Featured tidak boleh NULL / kosong maka harus mengisi default 0 = tidak featured
+ALTER TABLE `post` CHANGE `featured` `featured` TINYINT(1) NOT NULL DEFAULT '0';
